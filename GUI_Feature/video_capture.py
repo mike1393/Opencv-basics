@@ -1,7 +1,7 @@
 # This script captures the camera input and records the video
 import cv2
 
-output = "output.avi"
+output = "../src/output.avi"
 # Create a video capture to capture the camera
 cap = cv2.VideoCapture(0)
 if not cap.isOpened():

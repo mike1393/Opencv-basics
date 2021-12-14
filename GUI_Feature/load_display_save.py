@@ -1,8 +1,8 @@
 # This script opens a jpg file and saved the file as png
 import cv2
 
-filename = "starry_night.jpg"
-output_name = "starry_night.png"
+filename = "../src/starry_night.jpg"
+output_name = "../src/starry_night.png"
 # read the file
 img = cv2.imread(filename)
 # if the file does not exist, exit the script
