@@ -1,7 +1,7 @@
 # This program tracks object by specifying hsv values
-#1. Use the trackbar to specify hsv boundary
-#2. Press s to print current boundary
-#3. Press q to quit
+#1. Use the trackbar to specify hsv boundary, and preview the mask on the "mask" window
+#2. Press s to print current boundary on the terminal
+#3. Press q to quit all windows
 import cv2
 import numpy as np
 

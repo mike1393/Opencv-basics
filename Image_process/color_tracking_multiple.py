@@ -1,7 +1,7 @@
-# This program tracks colors by specifying hsv values
-#1. Use the trackbar to specify hsv boundary
-#2. Press s to save and apply to current mask
-#3. Press q to quit
+# This program is a modification of color_tracking.py
+#1. Use the trackbar to specify hsv boundary and preview the mask on the mask window
+#2. Press s to add and apply the current mask to the result window
+#3. Press q to quit all windows
 import cv2
 import numpy as np
 
