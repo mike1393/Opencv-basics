@@ -2,7 +2,6 @@
 # Use the trackbar to change the kernal size for blurring box
 # s_color and s_space is used to adjust sigma color and sigma space for Bilaternal Filtering
 import cv2
-from matplotlib import pyplot as plt
 import numpy as np
 def callback(x):
     global kernal_size, s_color, s_space, canvas

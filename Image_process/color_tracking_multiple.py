@@ -20,6 +20,7 @@ def callBack(x):
     v_u = cv2.getTrackbarPos("V_upper", window_name)
 
 # create trackbars for hsv value
+h_l, s_l, v_l, h_u,s_u, v_u = 0,0,0,180,255,255
 cv2.createTrackbar("H_low", window_name, 0, 180, callBack)
 cv2.createTrackbar("H_upper", window_name, 0, 180, callBack)
 cv2.createTrackbar("S_low", window_name, 0, 255, callBack)
@@ -27,7 +28,12 @@ cv2.createTrackbar("S_upper", window_name, 0, 255, callBack)
 cv2.createTrackbar("V_low", window_name, 0, 255, callBack)
 cv2.createTrackbar("V_upper", window_name, 0, 255, callBack)
 
-h_l, s_l, v_l, h_u,s_u, v_u = 0,0,0,180,255,255
+cv2.setTrackbarPos("H_low", window_name,h_l)
+cv2.setTrackbarPos("S_low", window_name,s_l)
+cv2.setTrackbarPos("V_low", window_name,v_l)
+cv2.setTrackbarPos("H_upper", window_name,h_u)
+cv2.setTrackbarPos("S_upper", window_name,s_u)
+cv2.setTrackbarPos("V_upper", window_name,v_u)
 # create a list to store current saved mask
 masks = []
 while True:
